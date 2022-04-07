@@ -1,12 +1,20 @@
 import "../styles/globals.sass";
-import Layout from "components/Layout";
+import { Footer, Header } from "components";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Header />
+
+      <main className="app">
+        <div className="app__wrapper">
+          <Component {...pageProps} />
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 }
 

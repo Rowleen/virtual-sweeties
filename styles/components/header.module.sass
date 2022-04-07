@@ -1,0 +1,20 @@
+@import ../mixins
+@import ../fonts
+
+.header
+  display: flex
+  justify-content: center
+  width: 100vw
+  padding: 16px 8px
+  border-bottom: solid 1px #eaeaea
+
+  .wrapper
+    display: flex
+    align-items: center
+    width: 100%
+    max-width: var(--max-width)
+
+    .title
+      @include font-size-rem(32px)
+      margin-left: 16px
+      font-family: MontserratBold

@@ -1,9 +1,14 @@
+@import variables
+@import fonts
+
 html,
 body
   padding: 0
   margin: 0
   font-size: 16px
-  overflow: hidden
+  font-family: Montserrat
+  overflow-x: hidden
+  color: var(--color-neutral-100)
 
 a
   color: inherit
@@ -13,3 +18,13 @@ a
   padding: 0
   margin: 0
   box-sizing: border-box
+
+.app
+  display: flex
+  justify-content: center
+  width: 100vw
+
+  .app__wrapper
+    width: 100%
+    max-width: var(--max-width)
+    padding: 32px 0
